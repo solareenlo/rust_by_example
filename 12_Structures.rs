@@ -19,24 +19,6 @@ struct Rectangle {
     bottom_right: Point,
 }
 
-fn rect_area(rec: Rectangle) -> f32 {
-    let w = (rec.bottom_right.x - rec.top_left.x).abs();
-    let h = (rec.top_left.y - rec.bottom_right.y).abs();
-    return w * h;
-}
-
-fn square(p: Point, len: f32) -> Rectangle {
-    let Point { x, y } = p;
-    let rec = Rectangle {
-        top_left: p,
-        bottom_right: Point {
-            x: x + len,
-            y: y - len,
-        },
-    };
-    return rec;
-}
-
 fn main() {
     let name = String::from("Peter");
     let age = 20;
@@ -80,8 +62,4 @@ fn main() {
     let Pair(integer, decimal) = pair;
     println!("pair contains {:?} and {:?}", integer, decimal);
     println!("pair contains {:?} and {:?}", pair.0, pair.1);
-    println!();
-
-    let square = square(point, 2.0);
-    println!("Area: {}", rect_area(square));
 }

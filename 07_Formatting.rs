@@ -29,18 +29,6 @@ struct Color {
     blue: u8,
 }
 
-impl Display for Color {
-    fn fmt(&self, f: &mut Formatter) -> fmt::Result {
-        write!(
-            f,
-            "RGB ({r}, {g}, {b}) 0x{r:02X}{g:02X}{b:02X}",
-            r = self.red,
-            g = self.green,
-            b = self.blue
-        )
-    }
-}
-
 fn main() {
     for city in [
         City {
@@ -85,6 +73,5 @@ fn main() {
     .iter()
     {
         println!("{:?}", *color);
-        println!("{}", *color);
     }
 }

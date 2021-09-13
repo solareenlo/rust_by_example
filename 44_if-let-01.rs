@@ -4,8 +4,8 @@ fn main() {
     match optional {
         Some(i) => {
             println!("This is a really long string and `{:?}`", i);
-        },
-        _ => {},
+        }
+        _ => {}
     }
     println!();
 

@@ -1,7 +1,7 @@
 use std::fmt;
 
 struct Circle {
-    radius: i32
+    radius: i32,
 }
 
 impl fmt::Display for Circle {

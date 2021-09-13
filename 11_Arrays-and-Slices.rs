@@ -18,6 +18,6 @@ fn main() {
 
     let ys: [i32; 500] = [0; 500];
     println!("borrow a section of the array as a slice");
-    analyze_slice(&ys[1 .. 4]);
+    analyze_slice(&ys[1..4]);
     println!("{}", ys[100]);
 }

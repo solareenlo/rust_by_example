@@ -1,7 +1,7 @@
 enum Foo {
     Bar,
     Baz,
-    Qux(u32)
+    Qux(u32),
 }
 
 fn main() {

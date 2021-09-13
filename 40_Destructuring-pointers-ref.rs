@@ -26,7 +26,7 @@ fn main() {
         ref mut m => {
             *m += 10;
             println!("We added 10. `mut_value`: {:?}", m);
-        },
+        }
     }
     println!("{}", mut_value);
 }

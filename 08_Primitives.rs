@@ -5,7 +5,7 @@ fn print_out<T: std::fmt::Debug>(s: &str, arg: T) {
 }
 
 fn main() {
-    let logical:bool = true;
+    let logical: bool = true;
     print_out("logical", logical);
 
     let a_float: f64 = 1.0;

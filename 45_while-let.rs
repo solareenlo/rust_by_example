@@ -11,8 +11,10 @@ fn main() {
                     println!("`i` is `{:?}. Try again.", i);
                     optional = Some(i + 1);
                 }
-            },
-            _ => { break; },
+            }
+            _ => {
+                break;
+            }
         }
     }
     println!();

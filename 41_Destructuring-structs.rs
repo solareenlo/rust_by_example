@@ -4,7 +4,7 @@ fn main() {
         y: u32,
     }
 
-    let foo = Foo{ x: (3, 2), y: 2 };
+    let foo = Foo { x: (3, 2), y: 2 };
 
     match foo {
         Foo { x: (1, b), y } => println!("First of x is 1, b = {}, y = {}", b, y),

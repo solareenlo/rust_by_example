@@ -22,6 +22,9 @@ fn main() {
         Color::HSV(h, s, v) => println!("Hue: {}, saturation: {}, value: {}!", h, s, v),
         Color::HSL(h, s, l) => println!("Hue: {}, saturation: {}, lightness: {}!", h, s, l),
         Color::CMY(c, m, y) => println!("Cyan: {}, magenda: {}, yellow: {}!", c, m, y),
-        Color::CMYK(c, m, y, k) => println!("Cyan: {}, magenda: {}, yellow: {}, key (black): {}!", c, m, y, k),
+        Color::CMYK(c, m, y, k) => println!(
+            "Cyan: {}, magenda: {}, yellow: {}, key (black): {}!",
+            c, m, y, k
+        ),
     }
 }

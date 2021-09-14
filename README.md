@@ -6,11 +6,11 @@ rustc -o a.out 01_Hello-World.rs
 ./a.out
 
 # Create a library
-rustc --crate-type=lib 63_Creating-a-Library.rs
+rustc --crate-type=lib 63_Crates-Creating-a-Library.rs
 ls lib*
 
 # Using a library
-rustc 64_Using-a-Library.rs --extern rary=lib63_Creating_a_Library.rlib --edition=2018 -o a.out
+rustc 64_Crates-Using-a-Library.rs --extern rary=lib63_Crates-Creating_a_Library.rlib --edition=2018 -o a.out
 ./a.tou
 ```
 

@@ -12,6 +12,14 @@ ls lib*
 # Using a library
 rustc 64_Crates-Using-a-Library.rs --extern rary=lib63_Crates-Creating_a_Library.rlib --edition=2018 -o a.out
 ./a.tou
+
+# Using attribute
+rustc 66_Attributes-Crates.rs
+ls lib*
+
+# Using attribute flag
+rustc -o a.out --cfg some_condition 68_Attributes-Custom.rs
+./a.tou
 ```
 
 ## References

@@ -4,6 +4,14 @@
 ```shell
 rustc -o a.out 01_Hello-World.rs
 ./a.out
+
+# Create a library
+rustc --crate-type=lib 63_Creating-a-Library.rs
+ls lib*
+
+# Using a library
+rustc 64_Using-a-Library.rs --extern rary=lib63_Creating_a_Library.rlib --edition=2018 -o a.out
+./a.tou
 ```
 
 ## References

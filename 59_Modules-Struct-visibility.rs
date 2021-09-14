@@ -10,15 +10,15 @@ mod my {
 
     impl<T> ClosedBox<T> {
         pub fn new(contents: T) -> ClosedBox<T> {
-            ClosedBox {
-                contents: contents,
-            }
+            ClosedBox { contents: contents }
         }
     }
 }
 
 fn main() {
-    let open_box = my::OpenBox { contents: "public information" };
+    let open_box = my::OpenBox {
+        contents: "public information",
+    };
     println!("The open box contains: {}", open_box.contents);
 
     // let closed_box = my::ClosedBox { contents: "classified information" };

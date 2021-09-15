@@ -20,6 +20,10 @@ ls lib*
 # Using attribute flag
 rustc -o a.out --cfg some_condition 68_Attributes-Custom.rs
 ./a.tou
+
+# Valgrind
+rustc -o a.out 82_Scoping-rules_RAII.rs
+valgrind --leak-check=full --show-leak-kinds=all ./a.out
 ```
 
 ## References
